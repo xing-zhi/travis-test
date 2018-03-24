@@ -9,7 +9,7 @@ before_install:
 - cd ~
 - git clone --depth=50  git@github.com:xing-zhi/travis-test.git foo
 - cd foo
-- git checkout -b master
+- git checkout master
 script:
 - cd examples
 - git init
