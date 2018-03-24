@@ -13,7 +13,7 @@ before_install:
 script:
 - cd examples
 - git init
-- git remote add origin git@github.com:xing-zhi/travis-test.git foo
+- git remote add origin git@github.com:xing-zhi/travis-test.git
 - git add .
 - git commit -m 'Update examples'
 - git push -u -f origin master:gh-pages
