@@ -1,9 +1,9 @@
 before_install:
 - openssl aes-256-cbc -K $encrypted_a1632a6faaa6_key -iv $encrypted_a1632a6faaa6_iv
-  -in foo_rsa.enc -out ~\/.ssh/foo_rsa -d
-- chmod 600 ~/.ssh/foo_rsa
+  -in bar_rsa.enc -out ~\/.ssh/bar_rsa -d
+- chmod 600 ~/.ssh/bar_rsa
 - eval "$(ssh-agent -s)"
-- ssh-add ~/.ssh/foo_rsa
+- ssh-add ~/.ssh/bar_rsa
 - git config --global user.name "Travis Bot"
 - git config --global user.email xing-zhi@126.com
 - cd ~
